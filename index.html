@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fast Detect Ride</title>
+<meta name="description" content="Fast Detect Ride, l'appli iPhone qui analyse vos offres de course VTC en un coup d'œil.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,600;1,700&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+/* Layout: une colonne de lecture étroite, en-tête sombre de marque, encadré "en bref" puis sections numérotées comme dans un texte juridique */
+:root {
+  --bg: #f5f7fb;
+  --surface: #ffffff;
+  --fg: #11151c;
+  --muted: #566070;
+  --line: #dde3ec;
+  --accent: #0a6cff;
+  --brand-bg: #05070b;
+  --brand-fg: #f2f6ff;
+  --brand-accent: #2f8bff;
+  --display: "Exo 2", "Segoe UI", system-ui, sans-serif;
+  --body: "Source Sans 3", -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #07090d; --surface: #0f131a; --fg: #e8edf5; --muted: #98a3b5; --line: #1f2733; --accent: #4f9dff;
+    --brand-bg: #000000; --brand-fg: #f2f6ff; --brand-accent: #2f8bff; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #07090d; --surface: #0f131a; --fg: #e8edf5; --muted: #98a3b5; --line: #1f2733; --accent: #4f9dff;
+  --brand-bg: #000000; --brand-fg: #f2f6ff; --brand-accent: #2f8bff; color-scheme: dark;
+}
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 17px; line-height: 1.6; }
+.band { background: var(--brand-bg); color: var(--brand-fg); }
+.wrap { max-width: 44rem; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+header .wrap { padding-block: 2.5rem 2.25rem; display: grid; gap: .5rem; }
+.app { font-family: var(--display); font-style: italic; font-weight: 700; font-size: 1.05rem; letter-spacing: .02em; color: var(--brand-accent); display: flex; align-items: center; gap: .5rem; }
+.app svg { width: 1.4rem; height: 1.4rem; }
+h1 { font-family: var(--display); font-style: italic; font-weight: 700; font-size: clamp(1.9rem, 6vw, 2.6rem); line-height: 1.1; margin: 0; text-wrap: balance; }
+.date { color: #9fb0c8; font-size: .95rem; margin: 0; }
+main .wrap { padding-block: 2rem 4rem; display: grid; gap: 2.25rem; }
+.brief { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 1.25rem 1.4rem; }
+.brief h2 { margin-top: 0; }
+.brief ul { margin: 0; padding-left: 1.2rem; display: grid; gap: .35rem; }
+section { display: grid; gap: .6rem; }
+h2 { font-family: var(--display); font-style: italic; font-weight: 600; font-size: 1.3rem; line-height: 1.25; margin: 0; text-wrap: balance; }
+h2 .n { color: var(--accent); margin-right: .35rem; font-variant-numeric: tabular-nums; }
+p, ul { margin: 0; }
+ul { padding-left: 1.2rem; display: grid; gap: .3rem; }
+strong { font-weight: 600; }
+.id { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 1rem 1.25rem; display: grid; gap: .15rem; }
+.mail { font-weight: 600; color: var(--accent); user-select: all; overflow-wrap: anywhere; }
+a { color: var(--accent); }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+footer { border-top: 1px solid var(--line); }
+footer .wrap { padding-block: 1.5rem 2.5rem; color: var(--muted); font-size: .95rem; }
+
+.nav { display: flex; flex-wrap: wrap; gap: .25rem 1.25rem; padding-block: .8rem; border-top: 1px solid #1a2230; font-size: .95rem; }
+.nav a { color: #c9d6ea; text-decoration: none; }
+.nav a:hover, .nav a:focus-visible { color: var(--brand-accent); }
+details { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: .85rem 1.1rem; }
+summary { cursor: pointer; font-weight: 600; }
+details > div { padding-top: .6rem; display: grid; gap: .5rem; }
+.home .wrap { padding-block: 3rem; }
+.home p.lead { font-size: 1.2rem; color: #c9d6ea; max-width: 34rem; margin: 0; }
+</style>
+</head>
+<body>
+<header class="band home">
+  <div class="wrap" style="display:grid;gap:1rem">
+    <div class="app">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="2"/><path d="M13.5 3.5 7 13h4.5l-1.5 7.5L17 11h-4.5z" fill="currentColor"/></svg>
+      Fast Detect Ride
+    </div>
+    <h1>Vos offres de course, analysées en un coup d'œil.</h1>
+    <p class="lead">Prix au kilomètre, prix à l'heure et vrai temps de trajet, directement dans la Dynamic Island, les notifications et CarPlay. Pour les chauffeurs VTC, sur iPhone.</p>
+    <p class="date">Bientôt sur l'App Store.</p>
+  </div>
+</header>
+<nav class="band"><div class="wrap nav"><a href="/">Accueil</a><a href="/aide">Aide</a><a href="/conditions">Conditions</a><a href="/confidentialite">Confidentialité</a></div></nav>
+<footer>
+  <div class="wrap">Contact : <span class="mail">fastdetectride@gmail.com</span><br>Fast Detect Ride est une application indépendante, sans lien avec les plateformes de VTC dont elle lit les offres. Éditeur : Kevin Planchard EI, 36 rue Scheffer, 75116 Paris · RCS Paris 820 219 137.</div>
+</footer>
+</body>
+</html>

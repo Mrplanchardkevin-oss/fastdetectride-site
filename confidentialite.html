@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Confidentialité · Fast Detect Ride</title>
+<meta name="description" content="Politique de confidentialité de l'application Fast Detect Ride.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,600;1,700&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+/* Layout: une colonne de lecture étroite, en-tête sombre de marque, encadré "en bref" puis sections numérotées comme dans un texte juridique */
+:root {
+  --bg: #f5f7fb;
+  --surface: #ffffff;
+  --fg: #11151c;
+  --muted: #566070;
+  --line: #dde3ec;
+  --accent: #0a6cff;
+  --brand-bg: #05070b;
+  --brand-fg: #f2f6ff;
+  --brand-accent: #2f8bff;
+  --display: "Exo 2", "Segoe UI", system-ui, sans-serif;
+  --body: "Source Sans 3", -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #07090d; --surface: #0f131a; --fg: #e8edf5; --muted: #98a3b5; --line: #1f2733; --accent: #4f9dff;
+    --brand-bg: #000000; --brand-fg: #f2f6ff; --brand-accent: #2f8bff; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #07090d; --surface: #0f131a; --fg: #e8edf5; --muted: #98a3b5; --line: #1f2733; --accent: #4f9dff;
+  --brand-bg: #000000; --brand-fg: #f2f6ff; --brand-accent: #2f8bff; color-scheme: dark;
+}
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 17px; line-height: 1.6; }
+.band { background: var(--brand-bg); color: var(--brand-fg); }
+.wrap { max-width: 44rem; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+header .wrap { padding-block: 2.5rem 2.25rem; display: grid; gap: .5rem; }
+.app { font-family: var(--display); font-style: italic; font-weight: 700; font-size: 1.05rem; letter-spacing: .02em; color: var(--brand-accent); display: flex; align-items: center; gap: .5rem; }
+.app svg { width: 1.4rem; height: 1.4rem; }
+h1 { font-family: var(--display); font-style: italic; font-weight: 700; font-size: clamp(1.9rem, 6vw, 2.6rem); line-height: 1.1; margin: 0; text-wrap: balance; }
+.date { color: #9fb0c8; font-size: .95rem; margin: 0; }
+main .wrap { padding-block: 2rem 4rem; display: grid; gap: 2.25rem; }
+.brief { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 1.25rem 1.4rem; }
+.brief h2 { margin-top: 0; }
+.brief ul { margin: 0; padding-left: 1.2rem; display: grid; gap: .35rem; }
+section { display: grid; gap: .6rem; }
+h2 { font-family: var(--display); font-style: italic; font-weight: 600; font-size: 1.3rem; line-height: 1.25; margin: 0; text-wrap: balance; }
+h2 .n { color: var(--accent); margin-right: .35rem; font-variant-numeric: tabular-nums; }
+p, ul { margin: 0; }
+ul { padding-left: 1.2rem; display: grid; gap: .3rem; }
+strong { font-weight: 600; }
+.id { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 1rem 1.25rem; display: grid; gap: .15rem; }
+.mail { font-weight: 600; color: var(--accent); user-select: all; overflow-wrap: anywhere; }
+a { color: var(--accent); }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+footer { border-top: 1px solid var(--line); }
+footer .wrap { padding-block: 1.5rem 2.5rem; color: var(--muted); font-size: .95rem; }
+
+.nav { display: flex; flex-wrap: wrap; gap: .25rem 1.25rem; padding-block: .8rem; border-top: 1px solid #1a2230; font-size: .95rem; }
+.nav a { color: #c9d6ea; text-decoration: none; }
+.nav a:hover, .nav a:focus-visible { color: var(--brand-accent); }
+details { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: .85rem 1.1rem; }
+summary { cursor: pointer; font-weight: 600; }
+details > div { padding-top: .6rem; display: grid; gap: .5rem; }
+.home .wrap { padding-block: 3rem; }
+.home p.lead { font-size: 1.2rem; color: #c9d6ea; max-width: 34rem; margin: 0; }
+</style>
+</head>
+<body>
+<header class="band">
+  <div class="wrap">
+    <div class="app">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="2"/><path d="M13.5 3.5 7 13h4.5l-1.5 7.5L17 11h-4.5z" fill="currentColor"/></svg>
+      Fast Detect Ride
+    </div>
+    <h1>Politique de confidentialité</h1>
+    <p class="date">Dernière mise à jour : 21 octobre 2026</p>
+  </div>
+</header>
+<nav class="band"><div class="wrap nav"><a href="/">Accueil</a><a href="/aide">Aide</a><a href="/conditions">Conditions</a><a href="/confidentialite">Confidentialité</a></div></nav>
+
+<main>
+  <div class="wrap">
+
+    <div class="brief">
+      <h2>En bref</h2>
+      <ul>
+        <li>Pas de compte, pas de serveur : vos données restent sur votre iPhone.</li>
+        <li>L'écran est analysé en direct sur le téléphone. Aucune image n'est enregistrée ni envoyée.</li>
+        <li>Pas de publicité, pas de pistage, aucune donnée vendue.</li>
+        <li>Les abonnements sont gérés par Apple : nous ne voyons jamais vos coordonnées bancaires.</li>
+      </ul>
+    </div>
+
+    <section>
+      <h2><span class="n">1.</span>Qui est responsable de vos données</h2>
+      <div class="id">
+        <span><strong>Kevin Planchard EI</strong> (entrepreneur individuel)</span>
+        <span>36 rue Scheffer, 75116 Paris, France</span>
+        <span>RCS Paris 820 219 137 · SIRET 820 219 137 00032</span>
+        <span>Contact : <span class="mail">fastdetectride@gmail.com</span></span>
+      </div>
+    </section>
+
+    <section>
+      <h2><span class="n">2.</span>Lecture de l'écran</h2>
+      <p>Quand vous lancez le mode automatique, iOS vous demande l'autorisation de partager votre écran avec Fast Detect Ride. Vous pouvez l'arrêter à tout moment depuis l'appli ou le Centre de contrôle.</p>
+      <ul>
+        <li>Les images de l'écran sont lues <strong>directement sur votre iPhone</strong>, au moment où elles s'affichent, pour repérer les offres de course (prix, distances, adresses, temps).</li>
+        <li>Les images ne sont <strong>jamais enregistrées</strong> et ne quittent <strong>jamais</strong> votre téléphone.</li>
+        <li>Seules les informations utiles des offres (prix, distances, adresses, heures) sont gardées dans l'appli, sur votre iPhone, pour votre historique et vos statistiques.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="n">3.</span>Calcul des trajets</h2>
+      <p>Pour afficher le temps réel d'une course, l'appli envoie l'adresse de départ et l'adresse d'arrivée de l'offre au service de cartes d'Apple, intégré à l'iPhone. Ce calcul est fait par Apple selon sa propre <a href="https://www.apple.com/fr/legal/privacy/fr-ww/" target="_blank" rel="noopener">politique de confidentialité</a>. Nous ne recevons pas ces adresses.</p>
+    </section>
+
+    <section>
+      <h2><span class="n">4.</span>Localisation</h2>
+      <p>Avec votre accord, l'appli utilise votre position pendant le mode automatique, pour vérifier le lieu de prise en charge des offres, faire avancer la barre de votre objectif du jour et vous prévenir si le mode automatique s'arrête. Pour vérifier le lieu de prise en charge, votre position peut être transmise au service de cartes d'Apple, le temps de calculer la distance par la route. Elle ne nous est jamais envoyée, et la dernière position connue est effacée du téléphone après 10 minutes. Vous pouvez retirer l'autorisation dans Réglages &gt; Confidentialité &gt; Service de localisation.</p>
+    </section>
+
+    <section>
+      <h2><span class="n">5.</span>Ce qui est enregistré sur votre iPhone</h2>
+      <ul>
+        <li>L'historique des offres et des courses, et vos gains.</li>
+        <li>Vos réglages (seuils de couleur, objectif, sons).</li>
+        <li>Un journal technique qui aide à corriger les erreurs. Il ne sort de votre téléphone que si vous choisissez de nous l'envoyer.</li>
+      </ul>
+      <p>Ces données peuvent être incluses dans la sauvegarde iCloud de votre iPhone, si vous l'avez activée. Elles sont alors gérées par Apple. Pour tout effacer, supprimez l'historique dans l'appli, ou supprimez l'appli.</p>
+    </section>
+
+    <section>
+      <h2><span class="n">6.</span>Quand vous nous écrivez</h2>
+      <p>Les boutons « Signaler un problème » et « Envoyer cette offre » ouvrent un e-mail que vous pouvez relire avant de l'envoyer. Si vous l'envoyez, nous recevons votre adresse e-mail, votre message et les pièces jointes que vous avez choisies (par exemple une offre ou le journal technique). Nous les utilisons seulement pour vous répondre et améliorer l'appli, et nous les supprimons au plus tard 3 ans après notre dernier échange.</p>
+    </section>
+
+    <section>
+      <h2><span class="n">7.</span>Abonnements</h2>
+      <p>Les achats et abonnements passent par l'App Store. Apple gère le paiement et ne nous transmet ni votre nom, ni vos coordonnées bancaires. Vous gérez ou résiliez votre abonnement dans Réglages &gt; votre nom &gt; Abonnements.</p>
+    </section>
+
+    <section>
+      <h2><span class="n">8.</span>Ce que nous ne faisons pas</h2>
+      <ul>
+        <li>Pas de compte utilisateur.</li>
+        <li>Pas d'outil de statistiques, de publicité ou de pistage.</li>
+        <li>Aucune donnée vendue, louée ou partagée à des fins commerciales.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="n">9.</span>Vos droits</h2>
+      <p>Selon le RGPD, vous pouvez demander l'accès à vos données, leur correction ou leur suppression, et t'opposer à leur utilisation. Écrivez à <span class="mail">fastdetectride@gmail.com</span>. Les données gardées sur votre iPhone ne nous sont pas accessibles : vous les contrôlez directement. Si notre réponse ne vous satisfait pas, vous pouvez saisir la <a href="https://www.cnil.fr/fr/plaintes" target="_blank" rel="noopener">CNIL</a>.</p>
+    </section>
+
+    <section>
+      <h2><span class="n">10.</span>Public concerné</h2>
+      <p>Fast Detect Ride est destinée aux chauffeurs professionnels majeurs. Elle n'est pas conçue pour les enfants.</p>
+    </section>
+
+    <section>
+      <h2><span class="n">11.</span>Modifications</h2>
+      <p>Si cette politique change, la nouvelle version sera publiée sur cette page avec sa date de mise à jour.</p>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">Fast Detect Ride est une application indépendante, sans lien avec les plateformes de VTC dont elle lit les offres.</div>
+</footer>
+</body>
+</html>

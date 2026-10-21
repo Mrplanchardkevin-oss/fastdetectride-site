@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Conditions d'utilisation · Fast Detect Ride</title>
+<meta name="description" content="Conditions d'utilisation de l'application Fast Detect Ride.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,600;1,700&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+/* Layout: une colonne de lecture étroite, en-tête sombre de marque, encadré "en bref" puis sections numérotées comme dans un texte juridique */
+:root {
+  --bg: #f5f7fb;
+  --surface: #ffffff;
+  --fg: #11151c;
+  --muted: #566070;
+  --line: #dde3ec;
+  --accent: #0a6cff;
+  --brand-bg: #05070b;
+  --brand-fg: #f2f6ff;
+  --brand-accent: #2f8bff;
+  --display: "Exo 2", "Segoe UI", system-ui, sans-serif;
+  --body: "Source Sans 3", -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #07090d; --surface: #0f131a; --fg: #e8edf5; --muted: #98a3b5; --line: #1f2733; --accent: #4f9dff;
+    --brand-bg: #000000; --brand-fg: #f2f6ff; --brand-accent: #2f8bff; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #07090d; --surface: #0f131a; --fg: #e8edf5; --muted: #98a3b5; --line: #1f2733; --accent: #4f9dff;
+  --brand-bg: #000000; --brand-fg: #f2f6ff; --brand-accent: #2f8bff; color-scheme: dark;
+}
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 17px; line-height: 1.6; }
+.band { background: var(--brand-bg); color: var(--brand-fg); }
+.wrap { max-width: 44rem; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+header .wrap { padding-block: 2.5rem 2.25rem; display: grid; gap: .5rem; }
+.app { font-family: var(--display); font-style: italic; font-weight: 700; font-size: 1.05rem; letter-spacing: .02em; color: var(--brand-accent); display: flex; align-items: center; gap: .5rem; }
+.app svg { width: 1.4rem; height: 1.4rem; }
+h1 { font-family: var(--display); font-style: italic; font-weight: 700; font-size: clamp(1.9rem, 6vw, 2.6rem); line-height: 1.1; margin: 0; text-wrap: balance; }
+.date { color: #9fb0c8; font-size: .95rem; margin: 0; }
+main .wrap { padding-block: 2rem 4rem; display: grid; gap: 2.25rem; }
+.brief { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 1.25rem 1.4rem; }
+.brief h2 { margin-top: 0; }
+.brief ul { margin: 0; padding-left: 1.2rem; display: grid; gap: .35rem; }
+section { display: grid; gap: .6rem; }
+h2 { font-family: var(--display); font-style: italic; font-weight: 600; font-size: 1.3rem; line-height: 1.25; margin: 0; text-wrap: balance; }
+h2 .n { color: var(--accent); margin-right: .35rem; font-variant-numeric: tabular-nums; }
+p, ul { margin: 0; }
+ul { padding-left: 1.2rem; display: grid; gap: .3rem; }
+strong { font-weight: 600; }
+.id { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 1rem 1.25rem; display: grid; gap: .15rem; }
+.mail { font-weight: 600; color: var(--accent); user-select: all; overflow-wrap: anywhere; }
+a { color: var(--accent); }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+footer { border-top: 1px solid var(--line); }
+footer .wrap { padding-block: 1.5rem 2.5rem; color: var(--muted); font-size: .95rem; }
+
+.nav { display: flex; flex-wrap: wrap; gap: .25rem 1.25rem; padding-block: .8rem; border-top: 1px solid #1a2230; font-size: .95rem; }
+.nav a { color: #c9d6ea; text-decoration: none; }
+.nav a:hover, .nav a:focus-visible { color: var(--brand-accent); }
+details { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: .85rem 1.1rem; }
+summary { cursor: pointer; font-weight: 600; }
+details > div { padding-top: .6rem; display: grid; gap: .5rem; }
+.home .wrap { padding-block: 3rem; }
+.home p.lead { font-size: 1.2rem; color: #c9d6ea; max-width: 34rem; margin: 0; }
+</style>
+</head>
+<body>
+<header class="band">
+  <div class="wrap">
+    <div class="app">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="2"/><path d="M13.5 3.5 7 13h4.5l-1.5 7.5L17 11h-4.5z" fill="currentColor"/></svg>
+      Fast Detect Ride
+    </div>
+    <h1>Conditions d'utilisation</h1>
+    <p class="date">Dernière mise à jour : 21 octobre 2026</p>
+  </div>
+</header>
+<nav class="band"><div class="wrap nav"><a href="/">Accueil</a><a href="/aide">Aide</a><a href="/conditions">Conditions</a><a href="/confidentialite">Confidentialité</a></div></nav>
+
+<main>
+  <div class="wrap">
+
+    <div class="brief">
+      <h2>En bref</h2>
+      <ul>
+        <li>Fast Detect Ride vous aide à juger une offre de course. La décision d'accepter reste toujours la vôtre.</li>
+        <li>Les chiffres affichés sont calculés automatiquement et peuvent parfois être faux.</li>
+        <li>Ne manipulez jamais votre téléphone en conduisant.</li>
+        <li>Les abonnements se gèrent et se résilient dans votre compte Apple.</li>
+      </ul>
+    </div>
+
+    <section>
+      <h2><span class="n">1.</span>Éditeur</h2>
+      <div class="id">
+        <span><strong>Kevin Planchard EI</strong> (entrepreneur individuel)</span>
+        <span>36 rue Scheffer, 75116 Paris, France</span>
+        <span>RCS Paris 820 219 137 · SIRET 820 219 137 00032</span>
+        <span>Contact : <span class="mail">fastdetectride@gmail.com</span></span>
+      </div>
+    </section>
+
+    <section>
+      <h2><span class="n">2.</span>Objet</h2>
+      <p>Ces conditions encadrent l'utilisation de l'application Fast Detect Ride sur iPhone. En utilisant l'appli, vous les acceptez, en plus du <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">contrat de licence standard d'Apple</a> qui s'applique à toutes les applications de l'App Store.</p>
+    </section>
+
+    <section>
+      <h2><span class="n">3.</span>Ce que fait l'application</h2>
+      <p>Fast Detect Ride lit les offres de course affichées sur votre écran, calcule des indicateurs (prix au kilomètre, prix à l'heure, temps de trajet) et les affiche dans une notification, la Dynamic Island ou CarPlay. Elle peut aussi enregistrer vos courses et vos gains sur votre iPhone.</p>
+      <ul>
+        <li>L'appli <strong>n'accepte et ne refuse aucune course à votre place</strong>. Elle ne touche jamais à l'application de la plateforme.</li>
+        <li>Pour fonctionner, le mode automatique a besoin de votre autorisation de partage d'écran. Le traitement des données est décrit dans la <a href="/confidentialite">politique de confidentialité</a>.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="n">4.</span>Indépendance</h2>
+      <p>Fast Detect Ride est une application indépendante. Elle n'est ni affiliée, ni approuvée, ni soutenue par les plateformes de VTC dont elle lit les offres. Les noms de ces plateformes appartiennent à leurs propriétaires.</p>
+    </section>
+
+    <section>
+      <h2><span class="n">5.</span>Fiabilité des informations</h2>
+      <p>Les informations affichées sont lues et calculées automatiquement. Elles peuvent être incomplètes, en retard ou fausses, par exemple si l'écran est mal lu, si une adresse est imprécise ou si le réseau est lent. Elles sont données à titre d'aide. Vérifiez toujours l'offre dans l'application de la plateforme avant de l'accepter.</p>
+    </section>
+
+    <section>
+      <h2><span class="n">6.</span>Sécurité au volant</h2>
+      <p>Respectez le Code de la route. Il est interdit de tenir son téléphone en main en conduisant. Les affichages de l'appli sont faits pour être lus d'un coup d'œil, véhicule à l'arrêt ou téléphone fixé sur un support. Vous restez seul responsable de votre conduite.</p>
+    </section>
+
+    <section>
+      <h2><span class="n">7.</span>Vos engagements</h2>
+      <ul>
+        <li>Utiliser l'appli pour votre propre activité de chauffeur, et ne pas la copier, la revendre ou la modifier.</li>
+        <li>Respecter les conditions des plateformes de VTC que vous utilisez. Vous êtes responsable de votre relation avec elles.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="n">8.</span>Abonnements et essai gratuit</h2>
+      <ul>
+        <li>Certaines fonctions demandent un abonnement payant, mensuel ou annuel. Les prix sont affichés dans l'appli et sur l'App Store avant tout achat.</li>
+        <li>Un essai gratuit peut être proposé. Sauf résiliation au moins 24 heures avant sa fin, il se transforme en abonnement payant.</li>
+        <li>L'abonnement se renouvelle automatiquement à la fin de chaque période, sauf résiliation au moins 24 heures avant la date de renouvellement.</li>
+        <li>Le paiement est encaissé par Apple, sur votre compte Apple. Vous gérez et résiliez l'abonnement dans Réglages &gt; votre nom &gt; Abonnements.</li>
+        <li>Les demandes de remboursement se font auprès d'Apple, sur <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>.</li>
+        <li>Les codes promotionnels sont utilisables une seule fois par compte Apple, selon les conditions indiquées lors de l'offre.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="n">9.</span>Responsabilité</h2>
+      <p>Nous faisons notre possible pour que l'appli fonctionne bien et rapidement, sans pouvoir garantir qu'elle soit toujours disponible ni sans erreur. Une mise à jour d'iOS ou d'une plateforme de VTC peut empêcher temporairement la lecture des offres. Dans la limite permise par la loi, nous ne sommes pas responsables des décisions prises à partir des informations affichées, ni des pertes de revenus qui pourraient en découler.</p>
+    </section>
+
+    <section>
+      <h2><span class="n">10.</span>Propriété</h2>
+      <p>L'application, son nom, son logo et ses contenus appartiennent à l'éditeur. L'abonnement vous donne un droit d'utilisation personnel, pas un droit de propriété.</p>
+    </section>
+
+    <section>
+      <h2><span class="n">11.</span>Modifications</h2>
+      <p>Ces conditions peuvent évoluer, par exemple avec de nouvelles fonctions. La version à jour est toujours publiée sur cette page, avec sa date.</p>
+    </section>
+
+    <section>
+      <h2><span class="n">12.</span>Droit applicable et litiges</h2>
+      <p>Ces conditions sont soumises au droit français. En cas de problème, écrivez-nous d'abord à <span class="mail">fastdetectride@gmail.com</span> pour trouver une solution à l'amiable. À défaut, le litige sera porté devant les tribunaux compétents.</p>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">Fast Detect Ride est une application indépendante, sans lien avec les plateformes de VTC dont elle lit les offres.</div>
+</footer>
+</body>
+</html>
